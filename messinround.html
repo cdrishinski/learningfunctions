@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <meta charset = "UTF-8">
+  <title>Messin Round</title>
+</head>
+
+<body>
+  <input type="text" class="firstNumber" placeholder="First number">
+  <!-- <input type="text" class="secondNumber" placeholder="Second number">
+  <button type="button">Press Here</button> -->
+<!-- Solution will print here -->
+  <p></p>
+<!-- Javascript -->
+  <script>
+    let numOne = document.querySelector('.firstNumber');
+    // let numTwo = document.querySelector('.secondNumber');
+   let solution = document.querySelector('p');
+
+    function exponent(thingOne){
+      return thingOne ** thingOne;
+    }
+    function multiplied(thingOne){
+      return thingOne * thingOne;
+    }
+    function sum(thingOne){
+      return thingOne + thingOne;
+    }
+    function subtract(thingOne){
+      return thingOne - thingOne;
+    }
+    return thingOne;
+  }
+
+    solution.onchange = function(){
+      let thingOne = numOne.value;
+
+      if (isNaN(thingOne)) {
+        solution.textContent = "You need to enter a number!";
+      } else {solution.textContent = thingOne + " to the power of " + thingOne +                            "is " + exponent(thingOne) + ". " +
+                                    thingOne + " multiplied by " + thingOne + "is " + multiplied(thingOne) + ". " +
+                                    thingOne + " added to " + thingOne + "is " + sum(thingOne) + ". " +
+                                    thingOne + " minus " + thingOne + "is " + subtract(thingOne) + ". "};
+    }
+  </script>
+
+</body>
+</html>
